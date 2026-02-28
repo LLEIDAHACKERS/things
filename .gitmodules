@@ -1,0 +1,18 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/LLEIDAHACKERS/things-frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/LLEIDAHACKERS/things-backend.git
+[submodule "extension"]
+	path = extension
+	url = https://github.com/LLEIDAHACKERS/things-extension.git
+[submodule "modules/frontend"]
+	path = modules/frontend
+	url = https://github.com/LLEIDAHACKERS/things-frontend.git
+[submodule "modules/backend"]
+	path = modules/backend
+	url = https://github.com/LLEIDAHACKERS/things-backend.git
+[submodule "modules/extension"]
+	path = modules/extension
+	url = https://github.com/LLEIDAHACKERS/things-extension.git

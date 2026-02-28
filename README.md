@@ -35,6 +35,26 @@ API and data management system powering the entire Things ecosystem.
 
 ---
 
+## 🚀 Getting Started
+
+This repository contains the three main components as Git submodules. To clone the entire project with all submodules:
+
+```bash
+# Clone with all submodules
+git clone --recurse-submodules https://github.com/LLEIDAHACKERS/things.git
+
+# Or if you already cloned, initialize submodules
+git submodule update --init --recursive
+```
+
+To update all submodules to their latest versions:
+
+```bash
+git submodule update --remote --recursive
+```
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Please check out our [CONTRIBUTING](CONTRIBUTING) guide to get started.

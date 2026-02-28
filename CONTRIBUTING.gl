@@ -1,0 +1,209 @@
+# Contribuír a Things
+
+**[English](CONTRIBUTING)** | **[Español](CONTRIBUTING.es)** | **[Galego](CONTRIBUTING.gl)**
+
+---
+
+En primeiro lugar, grazas por considerar contribuír a Things! Son persoas coma ti as que fan de Things unha ferramenta tan xenial.
+
+## 📋 Táboa de Contidos
+
+- [Código de Conduta](#código-de-conduta)
+- [Como Podo Contribuír?](#como-podo-contribuír)
+  - [Reportar Bugs](#reportar-bugs)
+  - [Suxerir Funcionalidades](#suxerir-funcionalidades)
+  - [Contribuír Código](#contribuír-código)
+- [Estrutura do Repositorio](#estrutura-do-repositorio)
+
+## 📜 Código de Conduta
+
+Este proxecto e todas as persoas que participan nel réxense polo noso compromiso de proporcionar unha comunidade acolledora e inspiradora para todos. Por favor, sé respectuoso e construtivo nas túas interaccións.
+
+## 🤝 Como Podo Contribuír?
+
+### 🐛 Reportar Bugs
+
+Antes de crear reportes de bugs, por favor revisa os [issues existentes](../../issues) para evitar duplicados. Cando crees un reporte de bug, inclúe tantos detalles como sexa posible usando a nosa [plantilla de reporte de bugs](.github/ISSUE_TEMPLATE/issue_report.yaml).
+
+**Para reportar un bug:**
+
+1. Vai á pestana [Issues](../../issues)
+2. Fai clic en "New Issue"
+3. Selecciona "🐛 Bug Report"
+4. Completa a plantilla no teu idioma preferido (English, Español, ou Galego)
+
+**Os bos reportes de bugs inclúen:**
+
+- **Título claro** - Describe o problema de forma concisa
+- **Pasos para reproducir** - Pasos detallados para que outros poidan replicar o problema
+- **Comportamento esperado** - O que esperabas que ocorrera
+- **Comportamento actual** - O que realmente ocorreu
+- **Detalles do entorno** - SO, navegador, versión da app
+- **Capturas/logs** - Evidencia visual ou mensaxes de erro se aplica
+- **Nivel de severidade** - Canto de crítico é este problema?
+
+**Exemplo:**
+
+> **Título:** [BUG]: A app péchase ao gardar un elemento con caracteres especiais
+>
+> **Pasos:**
+> 1. Abrir a app
+> 2. Crear un novo elemento con título "Test & Exemplo"
+> 3. Facer clic en gardar
+> 4. A app péchase
+>
+> **Esperado:** O elemento debería gardarse exitosamente
+>
+> **Actual:** A app péchase con erro "Invalid character"
+>
+> **Entorno:** iOS 16.5, Things v1.2.0
+
+### ✨ Suxerir Funcionalidades
+
+As suxestións de funcionalidades son benvidas! Por favor usa a nosa [plantilla de solicitude de funcionalidade](.github/ISSUE_TEMPLATE/feature_request.yaml) para asegurar que temos toda a información necesaria.
+
+**Para suxerir unha funcionalidade:**
+
+1. Vai á pestana [Issues](../../issues)
+2. Fai clic en "New Issue"
+3. Selecciona "✨ Feature Request"
+4. Completa a plantilla no teu idioma preferido (English, Español, ou Galego)
+
+**As boas solicitudes de funcionalidade inclúen:**
+
+- **Formulación do problema** - Que problema resolve isto?
+- **Solución proposta** - Como che gustaría que funcionara?
+- **Alternativas consideradas** - Que outras solucións pensaches?
+- **Nivel de prioridade** - Canto de importante é isto para ti?
+- **Casos de uso** - Quen se beneficiaría desta funcionalidade?
+- **Contexto adicional** - Capturas, mockups ou exemplos
+
+**Exemplo:**
+
+> **Título:** [FEATURE]: Engadir etiquetas para organizar elementos
+>
+> **Problema:** Teño moitos elementos e é difícil atopar os relacionados
+>
+> **Solución:** Engadir un sistema de etiquetas onde os usuarios poidan crear etiquetas personalizadas e filtrar elementos por etiquetas
+>
+> **Alternativas:** Categorías ou cartafoles, pero as etiquetas son máis flexibles
+>
+> **Prioridade:** Alta - melloraría moito a organización
+>
+> **Caso de uso:** Estudantes organizando materiais de estudo, profesionais xestionando proxectos
+
+### 💻 Contribuír Código
+
+Queres contribuír código? Iso é xenial!
+
+**Este repositorio é só para issues e discusións do proxecto.** Para contribucións de código, por favor diríxete ao repositorio específico ao que queres contribuír:
+
+- **[Frontend](https://github.com/LLEIDAHACKERS/things-frontend)** - Aplicación móbil
+- **[Extension](https://github.com/LLEIDAHACKERS/things-extension)** - Extensión de navegador
+- **[Backend](https://github.com/LLEIDAHACKERS/things-backend)** - API e servizos
+
+Cada repositorio ten a súa propia guía CONTRIBUTING con:
+- Instrucións de configuración
+- Fluxo de desenvolvemento
+- Guías de commits
+- Proceso de pull request
+- Guías de estilo de código
+- Requisitos de testing
+
+**Fluxo xeral:**
+
+1. Atopa ou crea un issue neste repositorio central
+2. Comenta no issue para que outros saiban que estás traballando nel
+3. Vai ao repositorio específico (frontend/backend/extension)
+4. Segue a guía CONTRIBUTING dese repositorio
+5. Referencia o número de issue deste repositorio no teu PR
+
+## 🌿 Estratexia de Ramas
+
+Todos os repositorios de Things seguen o mesmo modelo de ramas:
+
+```
+main
+ └── develop
+      ├── feat/nome-rama ou feat/id-issue
+      └── fix/nome-rama ou fix/id-issue
+```
+
+### Tipos de Ramas
+
+- **`main`** - Código listo para produción. Rama protexida, só acepta merges desde `develop`
+- **`develop`** - Rama de integración para funcionalidades. Todo o desenvolvemento ocorre aquí primeiro
+- **`feat/*`** - Novas funcionalidades (ex., `feat/autenticacion-usuario` ou `feat/123`)
+- **`fix/*`** - Correccións de bugs (ex., `fix/crash-login` ou `fix/456`)
+
+### Convencións de Nomenclatura
+
+**Opción 1: Nome descritivo**
+```bash
+git checkout -b feat/modo-escuro
+git checkout -b fix/fuga-memoria
+```
+
+**Opción 2: ID de Issue**
+```bash
+git checkout -b feat/123
+git checkout -b fix/456
+```
+
+**Opción 3: Combinado**
+```bash
+git checkout -b feat/123-modo-escuro
+git checkout -b fix/456-fuga-memoria
+```
+
+### Exemplo de Fluxo de Traballo
+
+```bash
+# Empezar desde develop
+git checkout develop
+git pull origin develop
+
+# Crear a túa rama de funcionalidade
+git checkout -b feat/123-engadir-etiquetas
+
+# Facer os teus cambios e commit
+git add .
+git commit -m "feat: engadir sistema de etiquetas"
+
+# Push ao teu fork
+git push origin feat/123-engadir-etiquetas
+
+# Crear PR á rama develop (non a main!)
+```
+
+**Importante:** Sempre crea PRs apuntando á rama `develop`, nunca directamente a `main`.
+
+## 🏗️ Estrutura do Repositorio
+
+Things está organizado en tres repositorios principais:
+
+- **[things-frontend](https://github.com/LLEIDAHACKERS/things-frontend)** - Aplicación móbil (iOS/Android)
+- **[things-extension](https://github.com/LLEIDAHACKERS/things-extension)** - Extensión de navegador (Chrome/Firefox/Safari)
+- **[things-backend](https://github.com/LLEIDAHACKERS/things-backend)** - API e servizos backend
+
+**Este repositorio** serve como centro para:
+- Issues e reportes de bugs do proxecto
+- Solicitudes de funcionalidades que abarcan múltiples compoñentes
+- Discusións e preguntas xerais
+- Roadmap e planificación do proxecto
+- Documentación
+
+## 💬 Obter Axuda
+
+- **Preguntas?** Abre unha [Discusión](../../discussions)
+- **Atopaches un bug?** Crea un [Reporte de Bug](../../issues/new/choose)
+- **Idea de funcionalidade?** Envía unha [Solicitude de Funcionalidade](../../issues/new/choose)
+- **Necesitas aclaración?** Comenta en issues existentes
+
+## 🙏 Grazas!
+
+As túas contribucións, xa sexa reportando bugs, suxerindo funcionalidades ou escribindo código, fan unha diferenza real. Apreciamos o teu tempo e esforzo en axudar a facer Things mellor para todos.
+
+---
+
+Feito con ❤️ pola comunidade [LleidaHackers](https://github.com/LLEIDAHACKERS)
