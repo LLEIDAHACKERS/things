@@ -1,0 +1,205 @@
+# Contributing to Things
+
+First off, thank you for considering contributing to Things! It's people like you that make Things such a great tool.
+
+## 📋 Table of Contents
+
+- [Code of Conduct](#code-of-conduct)
+- [How Can I Contribute?](#how-can-i-contribute)
+  - [Reporting Bugs](#reporting-bugs)
+  - [Suggesting Features](#suggesting-features)
+  - [Contributing Code](#contributing-code)
+- [Repository Structure](#repository-structure)
+
+## 📜 Code of Conduct
+
+This project and everyone participating in it is governed by our commitment to providing a welcoming and inspiring community for all. Please be respectful and constructive in your interactions.
+
+## 🤝 How Can I Contribute?
+
+### 🐛 Reporting Bugs
+
+Before creating bug reports, please check [existing issues](../../issues) to avoid duplicates. When you create a bug report, include as many details as possible using our [bug report template](.github/ISSUE_TEMPLATE/issue_report.yaml).
+
+**To report a bug:**
+
+1. Go to the [Issues](../../issues) tab
+2. Click "New Issue"
+3. Select "🐛 Bug Report"
+4. Fill out the template in your preferred language (English, Español, or Galego)
+
+**Good bug reports include:**
+
+- **Clear title** - Describe the issue concisely
+- **Steps to reproduce** - Detailed steps so others can replicate the issue
+- **Expected behavior** - What you expected to happen
+- **Actual behavior** - What actually happened
+- **Environment details** - OS, browser, app version
+- **Screenshots/logs** - Visual evidence or error messages if applicable
+- **Severity level** - How critical is this issue?
+
+**Example:**
+
+> **Title:** [BUG]: App crashes when saving item with special characters
+>
+> **Steps:**
+> 1. Open the app
+> 2. Create a new item with title "Test & Example"
+> 3. Click save
+> 4. App crashes
+>
+> **Expected:** Item should be saved successfully
+>
+> **Actual:** App crashes with error "Invalid character"
+>
+> **Environment:** iOS 16.5, Things v1.2.0
+
+### ✨ Suggesting Features
+
+Feature suggestions are welcome! Please use our [feature request template](.github/ISSUE_TEMPLATE/feature_request.yaml) to ensure we have all the information needed.
+
+**To suggest a feature:**
+
+1. Go to the [Issues](../../issues) tab
+2. Click "New Issue"
+3. Select "✨ Feature Request"
+4. Fill out the template in your preferred language (English, Español, or Galego)
+
+**Good feature requests include:**
+
+- **Problem statement** - What problem does this solve?
+- **Proposed solution** - How would you like this to work?
+- **Alternatives considered** - What other solutions did you think about?
+- **Priority level** - How important is this to you?
+- **Use cases** - Who would benefit from this feature?
+- **Additional context** - Screenshots, mockups, or examples
+
+**Example:**
+
+> **Title:** [FEATURE]: Add tags to organize items
+>
+> **Problem:** I have many items and it's hard to find related ones
+>
+> **Solution:** Add a tagging system where users can create custom tags and filter items by tags
+>
+> **Alternatives:** Categories or folders, but tags are more flexible
+>
+> **Priority:** High - would greatly improve organization
+>
+> **Use case:** Students organizing study materials, professionals managing projects
+
+### 💻 Contributing Code
+
+Want to contribute code? That's awesome! 
+
+**This repository is for project-wide issues and discussions only.** For code contributions, please refer to the specific repository you want to contribute to:
+
+- **[Frontend](https://github.com/LLEIDAHACKERS/things-frontend)** - Mobile application
+- **[Extension](https://github.com/LLEIDAHACKERS/things-extension)** - Browser extension  
+- **[Backend](https://github.com/LLEIDAHACKERS/things-backend)** - API and services
+
+Each repository has its own CONTRIBUTING guide with:
+- Setup instructions
+- Development workflow
+- Commit guidelines
+- Pull request process
+- Code style guidelines
+- Testing requirements
+
+**General workflow:**
+
+1. Find or create an issue in this central repository
+2. Comment on the issue to let others know you're working on it
+3. Go to the specific repository (frontend/backend/extension)
+4. Follow that repository's CONTRIBUTING guide
+5. Reference the issue number from this repository in your PR
+
+## 🌿 Branching Strategy
+
+All Things repositories follow the same branching model:
+
+```
+main
+ └── develop
+      ├── feat/branch-name or feat/issue-id
+      └── fix/branch-name or fix/issue-id
+```
+
+### Branch Types
+
+- **`main`** - Production-ready code. Protected branch, only accepts merges from `develop`
+- **`develop`** - Integration branch for features. All development happens here first
+- **`feat/*`** - New features (e.g., `feat/user-authentication` or `feat/123`)
+- **`fix/*`** - Bug fixes (e.g., `fix/login-crash` or `fix/456`)
+
+### Naming Conventions
+
+**Option 1: Descriptive name**
+```bash
+git checkout -b feat/dark-mode
+git checkout -b fix/memory-leak
+```
+
+**Option 2: Issue ID**
+```bash
+git checkout -b feat/123
+git checkout -b fix/456
+```
+
+**Option 3: Combined**
+```bash
+git checkout -b feat/123-dark-mode
+git checkout -b fix/456-memory-leak
+```
+
+### Workflow Example
+
+```bash
+# Start from develop
+git checkout develop
+git pull origin develop
+
+# Create your feature branch
+git checkout -b feat/123-add-tags
+
+# Make your changes and commit
+git add .
+git commit -m "feat: add tagging system"
+
+# Push to your fork
+git push origin feat/123-add-tags
+
+# Create PR to develop branch (not main!)
+```
+
+**Important:** Always create PRs targeting the `develop` branch, never directly to `main`.
+
+## 🏗️ Repository Structure
+
+Things is organized into three main repositories:
+
+- **[things-frontend](https://github.com/LLEIDAHACKERS/things-frontend)** - Mobile application (iOS/Android)
+- **[things-extension](https://github.com/LLEIDAHACKERS/things-extension)** - Browser extension (Chrome/Firefox/Safari)
+- **[things-backend](https://github.com/LLEIDAHACKERS/things-backend)** - API and backend services
+
+**This repository** serves as the central hub for:
+- Project-wide issues and bug reports
+- Feature requests that span multiple components
+- General discussions and questions
+- Project roadmap and planning
+- Documentation
+
+## 💬 Getting Help
+
+- **Questions?** Open a [Discussion](../../discussions)
+- **Bug found?** Create a [Bug Report](../../issues/new/choose)
+- **Feature idea?** Submit a [Feature Request](../../issues/new/choose)
+- **Need clarification?** Comment on existing issues
+
+## 🙏 Thank You!
+
+Your contributions, whether reporting bugs, suggesting features, or writing code, make a real difference. We appreciate your time and effort in helping make Things better for everyone.
+
+---
+
+Made with ❤️ by the [LleidaHackers](https://github.com/LLEIDAHACKERS) community

@@ -1,0 +1,128 @@
+name: "✨ Feature Request | Solicitud de Funcionalidad | Solicitude de Funcionalidade"
+description: "Suggest a new feature in English, Español ou Galego"
+title: "[FEATURE]: "
+labels: ["enhancement"]
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌍 Language | Idioma | Lingua
+        
+        Please fill in the form in the language you prefer.
+        Por favor, completa o formulario no idioma que prefiras.
+        Por favor, complete o formulario no idioma que prefira.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: 🌐 Select Language | Selecciona Idioma | Selecciona Lingua
+      options:
+        - English
+        - Español
+        - Galego
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 Problem Statement | Planteamiento del Problema | Formulación do Problema
+      description: |
+        EN: Is your feature request related to a problem? Please describe.
+        ES: ¿Tu solicitud está relacionada con un problema? Por favor, descríbelo.
+        GL: A túa solicitude está relacionada cun problema? Por favor, descríbeo.
+      placeholder: |
+        EN: I'm always frustrated when...
+        ES: Siempre me frustra cuando...
+        GL: Sempre me frustra cando...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Proposed Solution | Solución Propuesta | Solución Proposta
+      description: |
+        EN: Describe the solution you'd like to see.
+        ES: Describe la solución que te gustaría ver.
+        GL: Describe a solución que che gustaría ver.
+      placeholder: |
+        EN: I would like to...
+        ES: Me gustaría que...
+        GL: Gustaríame que...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives Considered | Alternativas Consideradas | Alternativas Consideradas
+      description: |
+        EN: Describe any alternative solutions or features you've considered.
+        ES: Describe cualquier solución o funcionalidad alternativa que hayas considerado.
+        GL: Describe calquera solución ou funcionalidade alternativa que considerases.
+      placeholder: |
+        EN: I've also thought about...
+        ES: También he pensado en...
+        GL: Tamén pensei en...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⭐ Priority | Prioridad | Prioridade
+      description: |
+        EN: How important is this feature to you?
+        ES: ¿Qué tan importante es esta funcionalidad para ti?
+        GL: Canto de importante é esta funcionalidade para ti?
+      options:
+        - Low | Baja | Baixa
+        - Medium | Media | Media
+        - High | Alta | Alta
+    validations:
+      required: true
+
+  - type: dropdown
+    id: willing-to-contribute
+    attributes:
+      label: 🤝 Contribution | Contribución | Contribución
+      description: |
+        EN: Are you willing to contribute to this feature?
+        ES: ¿Estarías dispuesto/a a contribuir con esta funcionalidad?
+        GL: Estarías disposto/a a contribuír con esta funcionalidade?
+      options:
+        - "Yes, I can implement it | Sí, puedo implementarla | Si, podo implementala"
+        - "Yes, I can help test it | Sí, puedo ayudar a probarla | Si, podo axudar a probala"
+        - "No, but I can provide feedback | No, pero puedo dar feedback | Non, pero podo dar feedback"
+        - "No | No | Non"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📎 Additional Context | Contexto Adicional | Contexto Adicional
+      description: |
+        EN: Add any other context, screenshots, or examples about the feature request.
+        ES: Añade cualquier otro contexto, capturas de pantalla o ejemplos sobre la solicitud.
+        GL: Engade calquera outro contexto, capturas de pantalla ou exemplos sobre a solicitude.
+      placeholder: |
+        EN: You can attach images by dragging and dropping them here.
+        ES: Puedes adjuntar imágenes arrastrándolas aquí.
+        GL: Podes adxuntar imaxes arrastrándoas aquí.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 📌 Confirmation | Confirmación | Confirmación
+      options:
+        - label: |
+            EN: I have searched for existing feature requests.
+            ES: He buscado solicitudes de funcionalidad existentes.
+            GL: Busquei solicitudes de funcionalidade existentes.
+          required: true
