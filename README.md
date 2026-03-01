@@ -94,7 +94,7 @@ DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/things_db
 AMQP_URL=amqp://guest:guest@localhost:5672/
 
 API_BASE_URL=http://localhost:8000
-BASE_URL=http://100.75.54.7:8000
+BASE_URL=http://localhost:8000
 
 OLLAMA_BASE_URL=http://localhost:11434
 OLLAMA_MODEL=llama3.2:3b
