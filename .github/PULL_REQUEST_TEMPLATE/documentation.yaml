@@ -1,0 +1,167 @@
+name: 📚 Documentation Update
+description: Pull request template for documentation changes
+title: "[DOCS]: "
+labels: ["documentation", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Documentation Update
+        Thank you for contributing to our documentation! Please fill out the information below.
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / Idioma / Idioma
+      description: Select your preferred language for this PR
+      options:
+        - English
+        - Español
+        - Galego
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Type of Documentation Change
+      description: What type of documentation are you updating?
+      options:
+        - README update
+        - Contributing guidelines
+        - API documentation
+        - User guide
+        - Code comments
+        - Architecture documentation
+        - Installation instructions
+        - Tutorial or example
+        - Translation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary of Changes
+      description: Briefly describe what documentation you're adding or changing
+      placeholder: |
+        Example: Updated the installation guide to include Docker setup instructions
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this documentation change needed?
+      placeholder: |
+        Example: Users were confused about how to set up the development environment with Docker
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Detailed Changes
+      description: List the specific changes made to the documentation
+      placeholder: |
+        - Added Docker installation section
+        - Updated prerequisites list
+        - Added troubleshooting section for common Docker issues
+        - Fixed broken links in README
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: Which part of the project does this documentation affect?
+      options:
+        - General project documentation
+        - Frontend documentation
+        - Backend documentation
+        - Extension documentation
+        - API documentation
+        - Multiple repositories
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Documentation Checklist
+      description: Please verify the following
+      options:
+        - label: I have checked for spelling and grammar errors
+          required: true
+        - label: All links have been tested and work correctly
+          required: true
+        - label: Code examples (if any) have been tested and work
+          required: false
+        - label: Screenshots/images (if any) are clear and up-to-date
+          required: false
+        - label: The documentation follows the project's style guide
+          required: true
+        - label: I have updated the table of contents (if applicable)
+          required: false
+        - label: The changes are consistent with existing documentation
+          required: true
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Link any related issues or discussions
+      placeholder: |
+        Closes #123
+        Related to #456
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Examples
+      description: If applicable, add screenshots or examples of the documentation changes
+      placeholder: |
+        Drag and drop images here or paste URLs
+    validations:
+      required: false
+
+  - type: dropdown
+    id: breaking-changes
+    attributes:
+      label: Breaking Changes
+      description: Does this documentation update reflect breaking changes in the code?
+      options:
+        - "No"
+        - "Yes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the documentation changes
+      placeholder: |
+        Any additional information that reviewers should know
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: final-checks
+    attributes:
+      label: Final Checks
+      options:
+        - label: I have read the [CONTRIBUTING](../../CONTRIBUTING) guidelines
+          required: true
+        - label: My PR targets the `develop` branch (not `main`)
+          required: true
+        - label: I have provided a clear and descriptive title
+          required: true
+        - label: I am available to address review feedback
+          required: true
